@@ -435,14 +435,10 @@
             </ul>
           </div>
 
-          <!---- <p class="footer-form-text">Подпишитесь на рассылку</p>
-            <form name="signup_form" autocomplete="on" novalidate>
-              <input type="email" name="email" placeholder="E-mail" />
-              <button type="submit">Подписаться</button>
-            </form>-->
-          <form class="footer-form">
-            <label class="footer-form-text"> Подпишитесь на рассылку</label>
-            <div class="footer-sign">
+          <!----footer-form-->
+          <div class="footer-form">
+            <p class="footer-form-text"> Подпишитесь на рассылку</p>
+            <form class="footer-form-details">
               <input class="footer-input" type="email" name="email" placeholder="E-mail" />
               <button class="footer-form-btn" type="submit">
                 Подписаться
@@ -450,7 +446,6 @@
                   <use href="./images/symbol-defs.svg#icon-icon-send"></use>
                 </svg>
               </button>
-            </div>
           </form>
         </div>
       </address>
@@ -485,7 +480,7 @@
                 <use href="./images/symbol-defs.svg#icon-email"></use>
               </svg>
             </div>
-            <div class="modal-field">
+            <div class="modal-field-text">
               <label for="user-text" class="modal-label">Комментарий</label>
               <textarea
                 name="user-text"
@@ -495,16 +490,18 @@
               ></textarea>
             </div>
             <div class="modal-agreement">
-          <div class="modal-field">
+          <div class="modal-field-check">
             <input
               type="checkbox"
               name="agreement"
               value="true"
-              class="modal-check"
+              class="modal-check visually-hidden"
               id="agreement"
             />
+           
             <label for="agreement" class="check-text"
-              >Соглашаюсь с рассылкой и принимаю Условия договора</label
+              >Соглашаюсь с рассылкой и принимаю 
+              <a href="" class="agreement-link">Условия договора</a></label
             >
           </div>
           <button class="modal-submit-btn" type="submit">Отправить</button>
